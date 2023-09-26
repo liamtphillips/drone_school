@@ -6,7 +6,7 @@ const NasaDailyPhoto = () => {
     const [photoData, setPhotoData] = useState(null);
 
     useEffect(() => {
-        const apiKey = '6d4TemCfOwXd3hPtV5tijHhMJvp3dw2SK5c5p86q';
+        const apiKey = API_KEY
         const apiUrl = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}`;
 
         fetch(apiUrl)
